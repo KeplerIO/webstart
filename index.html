@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script defer src="js/index.js"></script>
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<title>Webstart</title>
+</head>
+
+<body>
+	<header>
+		<h1>Hello, <i>Kepler</i></h1>
+		<div id="clock">
+			<p id="day">
+				<span class="loading-anim"></span>
+				<span class="loading-anim"></span>
+				<span class="loading-anim"></span>
+			</p>
+			<p id="date">
+				<span class="loading-anim"></span>
+				<span class="loading-anim"></span>
+				<span class="loading-anim"></span>
+			</p>
+			<p id="time">
+				<span class="loading-anim"></span>
+				<span class="loading-anim"></span>
+				<span class="loading-anim"></span>
+			</p>
+		</div>
+	</header>
+	<div class="block">
+		<img id="google-logo" src="img/google-logo.svg" alt="Google logo">
+		<form id="google-search-form" method="get" action="http://google.com/search">
+			<span id="search-icon" class="material-symbols-outlined">search</span>
+			<div id="google-search-bar">
+				<input id="google-search-text" type="text" name="q" placeholder="Search Google or type a URL" />
+			</div>
+		</form>
+	</div>
+</body>
+
+</html>
