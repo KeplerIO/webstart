@@ -3,10 +3,72 @@
 	src: url("../font/Iosevka-Regular.ttf");
 }
 
+header {
+	background-image: url("../img/august-burns-red.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 0.5em;
+	text-align: center;
+	padding: 0.5em 0;
+	font-size: 2em;
+	margin-bottom: 1em;
+}
+
+body {
+	color: #FFFFFF;
+	font-family: "Iosevka";
+	background-color: #1F1F1F;
+}
+
+input:focus-visible {
+	outline: none !important;
+}
+
+#google-logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0.5em;
+}
+
+#google-search-form {
+	outline: 1px solid #9A9FA5;
+	background-color: #FFFFFF;
+	padding: 0.3em 0;
+	border-radius: 1.5em;
+}
+
+#google-search-icon {
+	color: #9A9FA5;
+	vertical-align: middle;
+	margin-left: 0.3em;
+}
+
+#google-search-bar {
+	width: 85%;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+#google-search-text {
+	box-sizing: border-box;
+	width: 100%;
+	line-height: 2em;
+	background: none;
+	border: none;
+}
+
+.material-symbols-outlined {
+	font-variation-settings:
+		"FILL" 0,
+		"wght" 400,
+		"GRAD" 0,
+		"opsz" 24
+}
+
 .block,
 .block-flexible {
 	--padding-x: 1.5rem;
-	--padding-y: 0;
 	width: 100%;
 	padding-right: calc(var(--padding-x) * 0.5);
 	padding-left: calc(var(--padding-x) * 0.5);
@@ -44,69 +106,6 @@
 	}
 }
 
-header {
-	background-image: url("../img/august-burns-red.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	border-radius: 0.5em;
-	text-align: center;
-	padding: 0.5em 0;
-	font-size: 2em;
-	margin-bottom: 1em;
-}
-
-body {
-	color: #FFFFFF;
-	font-family: "Iosevka";
-	background-color: #1F1F1F;
-}
-
-input:focus-visible {
-	outline: none !important;
-}
-
-#google-logo {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 0.5em;
-}
-
-#google-search-form {
-	outline: 1px solid #9a9fa5;
-	background-color: #FFFFFF;
-	padding: 0.3em 0;
-	border-radius: 1.5em;
-}
-
-#search-icon {
-	color: #9a9fa5;
-	vertical-align: middle;
-	margin-left: 0.3em;
-}
-
-#google-search-bar {
-	width: 85%;
-	margin: 0 auto;
-	display: inline-block;
-}
-
-#google-search-text {
-	box-sizing: border-box;
-	width: 100%;
-	line-height: 2em;
-	background: none;
-	border: none;
-}
-
-.material-symbols-outlined {
-	font-variation-settings:
-        "FILL" 0,
-        "wght" 400,
-        "GRAD" 0,
-        "opsz" 24
-}
-
 .loading-anim {
 	display: inline-block;
 	width: 12px;
@@ -134,5 +133,3 @@ input:focus-visible {
 		transform: translateY(-15px);
 	}
 }
-
-
