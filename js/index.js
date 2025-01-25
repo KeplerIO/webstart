@@ -1,20 +1,5 @@
-const dayElement = document.getElementById("day");
-const dateElement = document.getElementById("date");
-const timeElement = document.getElementById("time");
-
-function updateClock() {
-	const now = new Date();
-	dayElement.innerText = new Intl.DateTimeFormat("en-US", {weekday: "long"}).format(now);
-	dateElement.innerText = new Intl.DateTimeFormat("en-US", {month: "long", day: "numeric", year: "numeric"}).format(now).replace(",", "");
-	timeElement.innerText = now.toLocaleTimeString();
-}
-
-setInterval(updateClock, 1000);
-
-//const searchBox = document.getElementById("google-search-text");
-//searchBox.value = "TESTERtesting";
-//console.log(searchBox);
-//
+import Clock from "./modules/clock.js";
+Clock.tick();
 
 const domains = [
 	".com",
