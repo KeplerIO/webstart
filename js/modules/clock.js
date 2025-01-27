@@ -12,7 +12,7 @@ const dateFormatter = new Intl.DateTimeFormat("en-US", {
 	year: "numeric"
 });
 
-function tick() {
+function init() {
 	setInterval(() => {
 		const now = new Date();
 		dayElement.innerText = dayFormatter.format(now);
@@ -22,6 +22,6 @@ function tick() {
 }
 
 export default {
-	tick
+	init
 }
 
