@@ -6,7 +6,7 @@ const domains = [
 	".io"
 ];
 
-function setup() {
+function init() {
 	const searchForm = document.getElementById("google-search-form");
 	searchForm.addEventListener("submit", (event) => {
 		const searchString = document.getElementById("google-search-text").value;
@@ -21,5 +21,5 @@ function setup() {
 }
 
 export default {
-	setup
+	init
 }
