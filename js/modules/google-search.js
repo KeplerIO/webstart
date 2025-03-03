@@ -7,6 +7,7 @@ const domains = [
 ];
 
 const searchForm = document.getElementById("google-search-form");
+const searchField = document.getElementById("google-search-field");
 
 function init() {
 	searchForm.addEventListener("submit", (event) => {
@@ -19,6 +20,8 @@ function init() {
 			}
 		}
 	});
+
+	searchField.focus();
 }
 
 export default {
