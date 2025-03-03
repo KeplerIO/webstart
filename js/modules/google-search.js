@@ -11,7 +11,7 @@ const searchField = document.getElementById("google-search-field");
 
 function init() {
 	searchForm.addEventListener("submit", (event) => {
-		const searchString = document.getElementById("google-search-text").value;
+		const searchString = document.getElementById("google-search-field").value;
 		for (const domain of domains) {
 			if (searchString.endsWith(domain)) {
 				event.preventDefault();
