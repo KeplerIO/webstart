@@ -8,7 +8,7 @@ const domains = [
 
 const searchForm = document.getElementById("google-search-form");
 
-function setup() {
+function init() {
 	searchForm.addEventListener("submit", (event) => {
 		const searchString = document.getElementById("google-search-text").value;
 		for (const domain of domains) {
@@ -22,5 +22,5 @@ function setup() {
 }
 
 export default {
-	setup
+	init
 }
